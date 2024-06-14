@@ -42,7 +42,7 @@ VAPID_PRIVATE_KEY=your_private_key
 ```
 ### 4. Démarrer le Serveur
 ```bash
-node server.js
+nodemon server.js
 
 ```
 Le serveur devrait maintenant fonctionner sur `http://localhost:3000`.
@@ -105,5 +105,5 @@ Ce script fonctionne en arrière-plan et gère les événements push :
 
 Ceci est un serveur Express.js qui gère l'enregistrement des abonnements et les notifications push :
 
-- **Stockage des Abonnements** : Stocke l'abonnement dans un tableau simple.
+- **Stockage des Abonnements** : Stocke l'abonnement dans un tableau simple.Dans l'idéal il faudrait stocker les informations dans une base de données pour eviter le clean du tableau de dépendances des subscriptions.
 - **Envoi des Notifications** : Envoie une notification push en utilisant `web-push`.
