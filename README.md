@@ -34,16 +34,23 @@ const webpush = require('web-push');
 const vapidKeys = webpush.generateVAPIDKeys();
 console.log(vapidKeys);
 ```
+ou soit à l'aide de cette application  : https://vapidkeys.com/
 
 Ajoutez les clés générées à votre fichier `.env` :
-Soit à l'aide de cette application  : https://vapidkeys.com/
-ou alors avec la fonction natifi de webpush  : 
+
 ```bash
 VAPID_PUBLIC_KEY=your_public_key
 VAPID_PRIVATE_KEY=your_private_key
 
 ```
 ### 4. Démarrer le Serveur
+Installer nodemon en global ou juste à la racine du fichier server afin d'eviter de relancer le serveur à chaque fois
+
+```bash
+  npm install nodemon
+```
+Ensuite lancer le serveur
+
 ```bash
 nodemon server.js
 
