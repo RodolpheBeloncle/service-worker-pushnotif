@@ -19,8 +19,9 @@ git clone <repository-url>
 cd <repository-directory>
 ```
 
-### 2. Installer les Dépendances
+### 2. Installer les Dépendances dans le fichier server
 ```bash
+cd server
 npm install
 
 ```
@@ -35,6 +36,8 @@ console.log(vapidKeys);
 ```
 
 Ajoutez les clés générées à votre fichier `.env` :
+Soit à l'aide de cette application  : https://vapidkeys.com/
+ou alors avec la fonction natifi de webpush  : 
 ```bash
 VAPID_PUBLIC_KEY=your_public_key
 VAPID_PRIVATE_KEY=your_private_key
