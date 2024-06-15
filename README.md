@@ -52,7 +52,7 @@ Installer nodemon en global ou juste à la racine du fichier server afin d'evite
 Ensuite lancer le serveur
 
 ```bash
-nodemon server.js
+nodemon app.js
 
 ```
 Le serveur devrait maintenant fonctionner sur `http://localhost:3000`.
